@@ -1,6 +1,6 @@
 function fiteredStep = step_BPF(dt,Tf)                        
-L = floor(Tf/dt+1);             % Length of signal
-stepF=[zeros(1,floor(L/6)),0.0003*ones(1,ceil(5*L/6))];
+L = Tf/dt+1;             % Length of signal
+stepF=[zeros(1,floor(L/6)),0.001*ones(1,ceil(5*L/6))];
 Xi=0.8;
 Wn=2*pi*50;
 BPF=tf([Wn^2 0],[1 2*Xi*Wn Wn^2]);

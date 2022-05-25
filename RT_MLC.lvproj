@@ -7,7 +7,11 @@
 	<Property Name="varPersistentID:{1BD97132-AED3-4395-9E6C-13C3490061B8}" Type="Ref">/NI-myRIO-1900-03058cdb/Vars.lvlib/control_law</Property>
 	<Property Name="varPersistentID:{379E7FCF-9CD5-4DEB-844D-B5368B4448E4}" Type="Ref">/NI-myRIO-1900-03058cdb/Vars.lvlib/J</Property>
 	<Property Name="varPersistentID:{421E044F-3B64-472D-B267-CCFF923F8C09}" Type="Ref">/NI-myRIO-1900-03058cdb/Vars.lvlib/dx</Property>
+	<Property Name="varPersistentID:{46C55ED9-04C3-491A-82BC-F16369F948DA}" Type="Ref">/NI-myRIO-1900-03058cdb/Vars.lvlib/x_data1</Property>
 	<Property Name="varPersistentID:{85C551BC-A157-4BBA-A714-E6D9171A123B}" Type="Ref">/NI-myRIO-1900-03058cdb/Vars.lvlib/PD</Property>
+	<Property Name="varPersistentID:{95A60EEF-19C0-4A98-AE64-32CD27F89A3C}" Type="Ref">/NI-myRIO-1900-03058cdb/Vars.lvlib/dx_data</Property>
+	<Property Name="varPersistentID:{9E1BD07A-BE0A-4297-ADA9-C0AF4938FA95}" Type="Ref">/NI-myRIO-1900-03058cdb/Vars.lvlib/j_data</Property>
+	<Property Name="varPersistentID:{ABB9AC2D-4C3A-4219-8CB0-2803B76BDFBE}" Type="Ref">/NI-myRIO-1900-03058cdb/Vars.lvlib/u_data</Property>
 	<Property Name="varPersistentID:{B54A447E-4092-4D67-B696-1035BF8F2122}" Type="Ref">/NI-myRIO-1900-03058cdb/Vars.lvlib/run_flag</Property>
 	<Property Name="varPersistentID:{F080B92E-D1E9-40C4-8A39-443CA217FA0E}" Type="Ref">/NI-myRIO-1900-03058cdb/Vars.lvlib/run time[s]</Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -135,7 +139,6 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="old" Type="Folder">
 			<Item Name="RT Main2.vi" Type="VI" URL="../RT Main2.vi"/>
-			<Item Name="testRT.vi" Type="VI" URL="../testRT.vi"/>
 		</Item>
 		<Item Name="PD.vi" Type="VI" URL="../PD.vi"/>
 		<Item Name="RT Main.vi" Type="VI" URL="../RT Main.vi"/>

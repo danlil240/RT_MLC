@@ -16,9 +16,5 @@ dX=[0 0 0]';
 dX(1)=X(2);
 dX(2)=(C_magnetic*(I1^2/x1^2-I2^2/x2^2)-k*X(1)-c*X(2))/mass+excitation;
 dX(3)= (X(1:2)' * Q * X(1:2) + R * u^2)*10^6;
-if(X(3)>5e-5)
-    dX(3)=5e+6;
-% crash
-end
 end
 
