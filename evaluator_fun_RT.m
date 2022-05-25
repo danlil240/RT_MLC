@@ -45,6 +45,8 @@ catch
 end
 
 if nargin>3
+    assignin('base','T_best',T)
+    assignin('base','Y_best',Y)
     if phisical==1
         pause(1)
         m1='3300*s0+7.3*s1';
