@@ -1,12 +1,5 @@
-%MLC_EX_LQR_PROBLEM parameters scropt for MLC
-%Type mlc=MLC('parameters_evaluator_RT') to create corresponding MLC object
-% mlc.go(n)   mlc.go(50,1)
-% mlc.show_best
-% mlc.show_ind(n2);  man(n2) = mlc.table.number;
-% a=readmylisp_to_formal_MLC('(+ S0 2)')
-% syms S0 S1
-% a= str2sym(a)  
-% vpa(expand(a),4)    
+% C:\RT_MLC\SAVE_GP\20220616-1544\SCRIPT parameters scropt for MLC
+% Type mlc=MLC('C:\RT_MLC\save_GP\20220616-1544\script') to create corresponding MLC object
 parameters.size = 50;
 parameters.sensors = 2;
 parameters.sensor_spec = 0;
@@ -37,19 +30,19 @@ parameters.probcro = 0.6;
 parameters.selectionmethod = 'tournament';
 parameters.tournamentsize = 7;
 parameters.lookforduplicates = 1;
-parameters.simplify = 1;%0;
+parameters.simplify = 1;
 parameters.evaluation_method = 'standalone_function';
-parameters.evaluation_function='evaluator_fun_RT';
-parameters.indfile='ind.dat';
-parameters.Jfile='J.dat';
-parameters.exchangedir=fullfile(pwd,'evaluator0');
+parameters.evaluation_function = 'evaluator_fun_RT';
+parameters.indfile = 'ind.dat';
+parameters.Jfile = 'J.dat';
+parameters.exchangedir = 'C:\RT_MLC\evaluator0';
 parameters.evaluate_all = 0;
-parameters.ev_again_best = 1;
+parameters.ev_again_best = 0;
 parameters.ev_again_nb = 5;
-parameters.ev_again_times = 2;
+parameters.ev_again_times = 5;
 parameters.artificialnoise = 0;
 parameters.execute_before_evaluation = '';
-parameters.badvalue = 1e+6;
+parameters.badvalue = 1e+06;
 parameters.badvalues_elim = 'none';
 parameters.preevaluation = 0;
 parameters.preev_function = '';
@@ -58,10 +51,5 @@ parameters.saveincomplete = 1;
 parameters.verbose = 3;
 parameters.fgen = 250;
 parameters.show_best = 1;
-parameters.problem_variables.Tf=0.5;
-parameters.problem_variables.R=0.001;
-parameters.problem_variables.Q=diag([22000 0.1]);
-parameters.problem_variables.dt=0.0005;
-parameters.problem_variables.x0=[1e-5 0 0];
-parameters.problem_variables.Tevmax=4;
-parameters.savedir=fullfile(pwd,'save_GP');
+parameters.problem_variables = 1;
+parameters.savedir = 'C:\RT_MLC\save_GP\20220616-1544';

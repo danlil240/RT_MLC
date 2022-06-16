@@ -6,7 +6,7 @@ if phisical==1
     m=['2500*S0+4*S1+',m];
     m=strrep(m,'S0','s0');
     m=strrep(m,'S1','s1');
-    m=strrep(m,'.*','*');
+    m=strrep(m,'.*','*')
 else
     Tf=parameters.problem_variables.Tf;
     dt=parameters.problem_variables.dt;
