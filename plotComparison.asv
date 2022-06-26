@@ -9,7 +9,8 @@ start=find(T>0.23,1);
 final=find(T>0.4,1);
 
 
-figure(999)
+figure('DefaultAxesFontSize',12,'DefaultAxesFontSize',12)
+
 subplot(4,1,1)
 plot(T(start:final)-0.23,Y_LQR(start:final,1),'linewidth',1.2)
 hold on
@@ -53,3 +54,4 @@ legend({'LQR','MLC[gain,add]','MLC[gain,add,sin]'})
 %     xlim([0.23,0.4])
 hold off
 xlabel('Time[s]')
+% ,'FontSize', 12,'style','bold'
