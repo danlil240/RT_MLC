@@ -17,7 +17,7 @@ hold on
 plot(T1(start:final)-0.23,Y_1(start:final,1),'linewidth',1.2)
 plot(T1(start:final)-0.23,Y_sin(start:final,1),'linewidth',1.2)
 legend({'LQR','MLC[gain,add]','MLC[gain,add,sin]'})
-ylabel('Displacment[m]');
+ylabel('Displacment[\mum]');
 %     title(m);
 %     xlim([0.23,0.4])
 hold off
@@ -28,7 +28,7 @@ hold on
 plot(T1(start:final)-0.23,Y_1(start:final,2),'linewidth',1.2)
 plot(T1(start:final)-0.23,Y_sin(start:final,2),'linewidth',1.2)
 legend({'LQR','MLC[gain,add]','MLC[gain,add,sin]'})
-ylabel('Velocity[m/s]');
+ylabel('Velocity[\mum/s]');
 %     xlim([0.23,0.4])
 hold off
 
